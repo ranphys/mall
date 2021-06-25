@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const pxtovw = require('postcss-px-to-viewport');
 module.exports = {
     configureWebpack: {
@@ -49,3 +50,19 @@ module.exports = {
         modules: false
     },
 }
+=======
+module.exports = {
+  configureWebpack: {
+    resolve:{
+      extensions:[],
+      alias:{
+        'assets':'@/assets',
+        'common':'@/common',
+        'components':'@/components',
+        'network':'@/network',
+        'views':'@/views',
+      }
+    }
+  }
+}
+>>>>>>> 1a0f987a73b6dc873102efe1e11d754e45854257

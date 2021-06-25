@@ -51,13 +51,21 @@ export default {
         align-items: center;
     }
     .checkBox {
+<<<<<<< HEAD
         width: 22px;
         height: 22px;
+=======
+        width: 10%;
+>>>>>>> 1a0f987a73b6dc873102efe1e11d754e45854257
         margin: 7px;
     }
     .image {
         width: 20%;
+<<<<<<< HEAD
         margin: 10px 0;
+=======
+        margin: 20px 0;
+>>>>>>> 1a0f987a73b6dc873102efe1e11d754e45854257
     }
     .image img {
         width: 100%;  
@@ -84,6 +92,10 @@ export default {
         float: right;
     }
     .checkBox {
+<<<<<<< HEAD
+=======
+        
+>>>>>>> 1a0f987a73b6dc873102efe1e11d754e45854257
         border-radius: 50%;
         border:2px solid #aaa
     }

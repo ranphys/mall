@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 import { reject, resolve } from 'core-js/fn/promise'
+=======
+>>>>>>> 1a0f987a73b6dc873102efe1e11d754e45854257
 import Vue from 'vue'
 import Vuex from 'vuex'
 
@@ -18,6 +21,7 @@ export default new Vuex.Store({
     },
     actions: {
         addCart(context, payload) {
+<<<<<<< HEAD
             return new Promise((resolve, reject) => {
                 let product = context.state.cartList.find(item =>
                     item.id === payload.id)
@@ -31,6 +35,17 @@ export default new Vuex.Store({
                     resolve('添加了新的商品')
                 }
             })
+=======
+            let product = context.state.cartList.find(item =>
+                item.id === payload.id)
+            if (product) {
+                context.commit('addCounter', product)
+            } else {
+                payload.checked = true
+                payload.count = 1
+                context.commit('addToCart', payload)
+            }
+>>>>>>> 1a0f987a73b6dc873102efe1e11d754e45854257
         }
     },
     getters: {

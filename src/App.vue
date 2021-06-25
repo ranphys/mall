@@ -16,7 +16,14 @@ export default {
 </script>
 
 
+<<<<<<< HEAD
 <style scoped>
  @import "./assets/css/base.css"
 </style>
  
+=======
+<style>
+  @import "./assets/css/base.css"
+
+</style>
+>>>>>>> 1a0f987a73b6dc873102efe1e11d754e45854257

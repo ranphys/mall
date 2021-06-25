@@ -1,5 +1,6 @@
 <template>
   <div class="bottem-bar">
+<<<<<<< HEAD
       <div  class="check-content">
           <div class="checkBox" :class="{check: isSelectAll}" @click="checkClick">
           <img src="@/assets/img/cart/tick.svg" alt="" >
@@ -12,6 +13,16 @@
       </div>
       <div class="calc">
           去计算:  ({{calculate}})
+=======
+      <div class="checkBox" :class="{check: isSelectAll}" @click="checkClick">
+          <img src="@/assets/img/cart/tick.svg" alt="" >
+          </div>
+      <div class="total-price">
+          合计： {{totalPrice}}
+      </div>
+      <div class="calc">
+          去计算{{calculate}}
+>>>>>>> 1a0f987a73b6dc873102efe1e11d754e45854257
       </div>
   </div>
 </template>
@@ -54,6 +65,7 @@ export default {
         width: 100%;
         height: 40px;
         display: flex;
+<<<<<<< HEAD
         background: #eee;
         align-items: center;
         font-size: 15px;
@@ -69,6 +81,14 @@ export default {
         margin: 0 7px;
         border-radius: 50%;
         border:2px solid #aaa;
+=======
+    }
+    .checkBox {
+        flex: 0.1;
+        margin: 7px;
+        border-radius: 50%;
+        border:2px solid #aaa
+>>>>>>> 1a0f987a73b6dc873102efe1e11d754e45854257
     }
     img {
         width: 100%;

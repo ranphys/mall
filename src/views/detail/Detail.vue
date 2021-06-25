@@ -32,7 +32,10 @@ import {getDetail,Goods,Shop} from '@/network/detail'
 import {debounce} from "@/common/utils.js"
 import {backTopMixin} from '@/common/mixin.js'
 
+<<<<<<< HEAD
 import{ mapActions} from 'vuex'
+=======
+>>>>>>> 1a0f987a73b6dc873102efe1e11d754e45854257
 export default {
   name: 'Detail',
   mixins: [backTopMixin],
@@ -52,7 +55,10 @@ export default {
       }
   },
   methods: {
+<<<<<<< HEAD
       ...mapActions(['addCart']),
+=======
+>>>>>>> 1a0f987a73b6dc873102efe1e11d754e45854257
       addToCart() {
           const product = {}
           console.log(this.goods);
@@ -60,8 +66,12 @@ export default {
           product.title = this.goods.title
           product.price = this.goods.lowPrice
           product.id = this.id
+<<<<<<< HEAD
           this.addCart(product).then(res=>this.$toast.show(res,1500))
 
+=======
+          this.$store.dispatch('addCart', product)
+>>>>>>> 1a0f987a73b6dc873102efe1e11d754e45854257
       },
       itemClick(index) {
           this.$refs.scroll.scrollTo(0,-this.scrollY[index],100)
